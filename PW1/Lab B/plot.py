@@ -27,7 +27,7 @@ analytical = N0 * np.exp(-LAMBDA * t)
 #         label the axes.
 
 fig, (ax1, ax2) = plt.subplots(1, 2, sharex=True, sharey=True)
-ax1.scatter(t, observed)
+ax1.scatter(t, observed, color="red")
 ax1.set_xlabel("time")
 ax1.set_ylabel("observed")
 ax2.plot(t, analytical)
